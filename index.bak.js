@@ -1,13 +1,22 @@
+
+
 // Define Stuff
 
 const getValue = document.querySelectorAll('[data-custom-css]');
 let styles = document.createElement('style');
 
-
+console.log(getValue);
 // Construct Stuff
 
+
 [...getValue].forEach(element => {
-    element.style.cssText = element.dataset.customCss;
+
+    styles.append( `
+        .show-value {
+            width: ${element.dataset.cssWidth};
+            background-color: ${element.dataset.backgroundColor};
+        }`);
+
 });
 
 
