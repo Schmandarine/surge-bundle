@@ -7,11 +7,11 @@
     <title>Test bundle</title>
     
 </head>
-<body>
+<body data-min-vw="450" data-max-vw="960" data-min-value="14" data-max-value="32">
 
 
     <div 
-    data-custom-css="width:50px;background-color:purple"
+    data-custom-css="width:100%;background-color:yellow"
     >
     Get Value</div>
 
@@ -22,11 +22,25 @@
         Second DIV
     </div>
 
+    <div id="typotest" class="typotest">TEST HIER UN DA</div>
+
+
+
+    <style>
+
+/* Modern browsers only need this one 
+
+@media screen and (min-width: 25em){
+  html { font-size: calc( 16px + (24 - 16) * (100vw - 400px) / (800 - 400) ); }
+}
+
+*/
 
 
 
 
+    </style>
 
-    <script src="./index.js"></script>
+    <script defer src="./index.js"></script>
 </body>
 </html>
