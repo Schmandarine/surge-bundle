@@ -1,0 +1,24 @@
+const script = document.createElement('script');
+script.type = 'text/javascript';
+script.src = 'https://long-system.surge.sh/preview.js';
+
+
+const iframe = document.querySelector("#site-iframe-next");
+const bodyElm = iframe.contentWindow.document.getElementsByTagName("body")[0]
+
+bodyElm.appendChild(script)
+
+
+
+
+
+
+
+const script = document.createElement('script');
+script.type = 'text/javascript';
+script.src = 'https://long-system.surge.sh/preview.js';
+
+const iframe = document.getElementsByTagName("iframe")[0];
+const bodyElm = iframe.contentWindow.document.getElementsByTagName("body")[0];
+
+bodyElm.appendChild(script);
